@@ -492,9 +492,9 @@ span{
 
     .hamburger{
       background:none;
-      /* position:absolute;
-      top:0;
-      right:0; */
+      /* position:absolute; */
+      margin-left: 80%;
+      /* float: right; */
       line-height:45px;
       padding:5px 15px 0px 15px;
       color:rgb(70, 33, 3);
@@ -507,9 +507,9 @@ span{
     }
     .cross{
       background:none;
-      /* position:absolute;
-      top:0px;
-      right:0; */
+      /* position:absolute; */
+      margin-left: 80%;
+      /* float: right; */
       padding:7px 15px 0px 15px;
       color:rgb(70, 33, 3);
       border:0;
