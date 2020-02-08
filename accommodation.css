@@ -192,7 +192,7 @@ body{
     text-align: center;
   }
 
-.heading{
+.event-heading{
   width:100%;
     color: #4d3107c9;
     font-family:BlackChancery;
@@ -208,35 +208,35 @@ body{
 }
 
 
-  #btn1{
+  #event-btn1{
     transform :scale(1);
     transition: transform 1s;
   }
-  #btn1:hover {
+  #event-btn1:hover {
       cursor: pointer;
     transform:scale(1.2);
 }
-#btn2{
+#event-btn2{
     transition: transform 1s;
     transform :scale(1);
   }
-  #btn2:hover {
+  #event-btn2:hover {
     cursor: pointer;
     transform:scale(1.2);
 }
-#btn3{
+#event-btn3{
     transition: transform 1s;
     transform :scale(1);
   }
-  #btn3:hover {
+  #event-btn3:hover {
     cursor: pointer;
     transform:scale(1.2);
 }
-#btn4{
+#event-btn4{
     transition: transform 1s;
     transform :scale(1);
   }
-  #btn4:hover {
+  #event-btn4:hover {
     cursor: pointer;
     transform:scale(1.2);
 }
@@ -256,6 +256,7 @@ body{
 
 #buttons{
     margin-top: 30%;
+    color:black;
 }
 
 #cards{
@@ -351,7 +352,7 @@ body{
 }
 
 
-.btn{
+/* .btn{
     float: left;
     margin-top:0;
     margin-left: 15%;
@@ -370,13 +371,18 @@ body{
 }
 .btn:hover{
     transform: scale(1.2);
-}
+} */
 span{
     text-align: center;
 }
 
 
 @media(min-width:600px){
+
+.hamburgerwrapper{
+    display:none ;
+}
+
 
 
     .topnav {
@@ -476,56 +482,75 @@ span{
 @media(max-width:600px){
 
 
+    .hamburgerheader{
+        width:100%; 
+        background:transparent; 
+        height:60px; 
+        line-height:60px;
+        /* border-bottom:1px solid #dddddd; */
+    }
 
+    .hamburger{
+      background:none;
+      /* position:absolute;
+      top:0;
+      right:0; */
+      line-height:45px;
+      padding:5px 15px 0px 15px;
+      color:rgb(70, 33, 3);
+      border:0;
+      font-size:1.4em;
+      font-weight:bold;
+      cursor:pointer;
+      outline:none;
+      z-index:10000000000000;
+    }
+    .cross{
+      background:none;
+      /* position:absolute;
+      top:0px;
+      right:0; */
+      padding:7px 15px 0px 15px;
+      color:rgb(70, 33, 3);
+      border:0;
+      font-size:3em;
+      line-height:65px;
+      font-weight:bold;
+      cursor:pointer;
+      outline:none;
+      z-index:10000000000000;
+    }
+    .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f3b94e;  position:absolute; text-align:center; font-size:22px;color: black;}
+    /* .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+    .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+    .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+    .menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+    .menu ul li a:hover {  color: #666; text-decoration:none;}
+    .menu a{text-decoration:none; color:#666;}
+    .menu a:hover{text-decoration:none; color:#666;} */
+    
+    /* .glyphicon-home{
+      color:white; 
+      font-size:1.5em; 
+      margin-top:5px; 
+      margin:0 auto;
+    } */
+    /* header{display:inline-block; font-size:12px;} */
+    span{padding-left:20px;}
+    /* a{color:#336699;} */
+  
+
+
+
+
+
+#buttons{
+    display: none;
+}
 
 #myLinks{
     margin-left: 25%;
 }
-
-
-    .topnav {
-        overflow: hidden;
-        background:transparent;
-        position: relative;
-      }
-      
-      /* Hide the links inside the navigation menu (except for logo/home) */
-      .topnav #myLinks {
-        display: none;
-      }
-      
-      /* Style navigation menu links */
-      .topnav a {
-        color: #3E221F;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-      }
-      
-      /* Style the hamburger menu */
-      .topnav a.icon {
-        background:transparent;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      
-      /* Add a grey background color on mouse-over */
-      /* .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-      } */
-      
-      /* Style the active link (or home/logo) */
-      .active {
-        background:transparent;
-        text-align: center;
-      }
-
-
-
 
 
       
