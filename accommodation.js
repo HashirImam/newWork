@@ -166,10 +166,21 @@ var span1 = document.getElementsByClassName("close")[1];
 var span2 = document.getElementsByClassName("close")[2];
 var span3 = document.getElementsByClassName("close")[3];
 
+var blur1=document.getElementById("myDIV");
+var blur2=document.getElementsByClassName("imageWrapper")[0];
+var blur3=document.getElementsByClassName("bulletWrapper")[0];
+var blackgradient=document.getElementsByClassName("content-wrapper")[0];
+
 bt1.onclick = function() {
  
   // modal2.style.display = "none";
   // modal3.style.display = "none";
+  blur1.style.filter="blur(5px)";
+  blur2.style.filter="blur(5px)";
+  blur3.style.filter="blur(5px)";
+  blackgradient.style.background=" rgba(0, 0, 0, 0.671)";
+  blur1.style.pointerEvents="none";
+
   
   var op = 0.1;
     modal1.style.display = 'block';
@@ -187,6 +198,11 @@ bt1.onclick = function() {
 bt2.onclick = function() {
     // modal1.style.display = "none";
     // modal3.style.display = "none";
+
+    blur1.style.filter="blur(5px)";
+    blur2.style.filter="blur(5px)";
+    blur3.style.filter="blur(5px)";
+    blackgradient.style.background=" rgba(0, 0, 0, 0.671)";
     var op = 0.1;  
     modal2.style.display = 'block';
     var timer = setInterval(function () {
@@ -202,6 +218,11 @@ bt2.onclick = function() {
   bt3.onclick = function() {
     // modal1.style.display = "none";
     // modal2.style.display = "none";
+
+    blur1.style.filter="blur(5px)";
+    blur2.style.filter="blur(5px)";
+    blur3.style.filter="blur(5px)";
+    blackgradient.style.background=" rgba(0, 0, 0, 0.671)";
     var op = 0.1;  
     modal3.style.display = 'block';
     var timer = setInterval(function () {
@@ -217,6 +238,11 @@ bt2.onclick = function() {
   bt4.onclick = function() {
     // modal1.style.display = "none";
     // modal2.style.display = "none";
+
+    blur1.style.filter="blur(5px)";
+    blur2.style.filter="blur(5px)";
+    blur3.style.filter="blur(5px)";
+    blackgradient.style.background=" rgba(0, 0, 0, 0.671)";
     var op = 0.1;  
     modal4.style.display = 'block';
     var timer = setInterval(function () {
@@ -232,7 +258,12 @@ bt2.onclick = function() {
 
 
 span.onclick = function() {
-  
+
+  blur1.style.filter="blur(0px)";
+  blur2.style.filter="blur(0px)";
+  blur3.style.filter="blur(0px)";
+  blackgradient.style.background="none";
+  blur1.style.pointerEvents="all";
   var op = 1;  
     var timer = setInterval(function () {
         if (op <= 0){
@@ -248,6 +279,11 @@ span.onclick = function() {
 }
 
 span1.onclick = function() {
+
+  blur1.style.filter="blur(0px)";
+  blur2.style.filter="blur(0px)";
+  blur3.style.filter="blur(0px)";
+  blackgradient.style.background="none";
     
   var op = 1;  
   var timer = setInterval(function () {
@@ -265,6 +301,11 @@ span1.onclick = function() {
 
 span2.onclick = function() {
 
+  blur1.style.filter="blur(0px)";
+  blur2.style.filter="blur(0px)";
+  blur3.style.filter="blur(0px)";
+  blackgradient.style.background="none";
+
   var op = 1;  
   var timer = setInterval(function () {
       if (op <= 0){
@@ -279,6 +320,11 @@ span2.onclick = function() {
  
   
 span3.onclick = function() {
+
+  blur1.style.filter="blur(0px)";
+  blur2.style.filter="blur(0px)";
+  blur3.style.filter="blur(0px)";
+  blackgradient.style.background="none";
 
   var op = 1;  
   var timer = setInterval(function () {
